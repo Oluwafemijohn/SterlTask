@@ -3,13 +3,11 @@ import { NavigationContainer } from '@react-navigation/native';
 import { RecoilRoot } from 'recoil';
 import SplashScreen from 'react-native-splash-screen';
 import SafeAreaScreen from './src/components/SafeAreaScreen';
-import MainScreen from './src/screens/Account';
-import AppTabNavigation from './src/navigations/AppTabNavigation';
-import AppNavigation from './src/navigations/OnboardingNavigation';
+import Home from './src/screens/Home';
+
 
 const App = () => {
   useEffect(() => {
-    // RNBootSplash.hide({ fade: true });
     SplashScreen.hide();
   }, []);
 
@@ -17,7 +15,7 @@ const App = () => {
     <SafeAreaScreen>
       <RecoilRoot>
         <NavigationContainer>
-          <AppNavigation />
+          <Home />
         </NavigationContainer>
       </RecoilRoot>
     </SafeAreaScreen>

@@ -5,7 +5,7 @@ import {
   View,
   ViewStyle,
   Text,
-  Image,
+
 } from 'react-native';
 import { widthPercentageToDP as WP } from 'react-native-responsive-screen';
 
@@ -56,7 +56,7 @@ function AppTextInput({
     placeholder: {
       position: 'absolute',
       left: 0,
-      top: WP(-8),
+      top: WP(0),
       fontSize: WP('3.5%'),
       // bottom: WP(),
       color: common.colors.grey,
@@ -87,7 +87,7 @@ function AppTextInput({
           onBlur={onBlur}
           onChangeText={onChangeText}
           keyboardType={keyboardType}
-          placeholderTextColor={colors.lightGrey}
+          placeholderTextColor={colors.grey}
           style={[
             defaultStyle.text,
             styles.input,

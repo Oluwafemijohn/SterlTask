@@ -6,10 +6,6 @@ import { StyleSheet } from 'react-native';
 import Home from '../screens/Home';
 import RouteConstant from './RouteConstant';
 import HomeIcon from '../assets/svg/HomeIcon';
-import FastOrder from '../screens/FastOrder';
-import Credit from '../screens/Credit';
-import Orders from '../screens/Orders';
-import Account from '../screens/Account';
 import common from '../constants/common';
 import CreditIcon from '../assets/svg/Credit';
 import FastOrderIcon from '../assets/svg/FastOrderIcon';
@@ -31,7 +27,7 @@ function AppTabNavigation() {
         },
         tabBarShowLabel: false,
       })}>
-      <Tab.Screen
+      {/* <Tab.Screen
         name={RouteConstant.Home}
         component={Home}
         options={{
@@ -111,7 +107,7 @@ function AppTabNavigation() {
             </View>
           ),
         }}
-      />
+      /> */}
     </Tab.Navigator>
   );
 }
