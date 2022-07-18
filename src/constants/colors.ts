@@ -11,4 +11,5 @@ export default {
   red: '#F44336',
   grey3: '#61656A',
   buttonColor: '#DB353A',
+  yellow: '#FFCA28',
 };
